@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <section class="main-product-page p-3">
+        <div class="row">
+            <div class="col-lg-1">
+                <ul class="side-list ps-0 xzoom-thumbs">
+                    <li class="mb-3 border">
+                        <a href="javascript:void(0)">
+                            <img src="image/1.webp" alt="Product 1" class="xzoom-gallery" onclick="changeImg(this)" />
+                        </a>
+                    </li>
+                    <li class="mb-3 border">
+                        <a href="javascript:void(0)">
+                            <img src="image/2.webp" alt="Product 2" class="xzoom-gallery" onclick="changeImg(this)" />
+                        </a>
+                    </li>
+                    <li class="mb-3 border">
+                        <a href="javascript:void(0)">
+                            <img src="image/3.webp" alt="Product 3" class="xzoom-gallery" onclick="changeImg(this)" />
+                        </a>
+                    </li>
+                    <li class="border">
+                        <a href="javascript:void(0)">
+                            <img src="image/4.webp" alt="Product 4" class="xzoom-gallery" onclick="changeImg(this)" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-5">
+                <figure class="main-product xzoom-container">
+                    <img id="zoom" src="image/1.webp" alt="Product 1" class="xzoom" data-zoom-image="image/1.webp" />
+                </figure>
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Product name</h2>
+                <h3 class="my-3">$<span id="price" class="d-none">300</span><span id="zero">0</span></h3>
+                <div class="counting mb-3">
+                    <button type="button" class="min">-</button>
+                    <input type="text" id="num" value="1" readonly />
+                    <button type="button" class="max">+</button>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis accusantium, reprehenderit facilis accusamus, saepe eos esse perspiciatis quod quasi porro mollitia possimus aperiam culpa totam beatae illo obcaecati voluptatibus ad? Inventore eligendi aperiam quibusdam rem voluptatem qui, enim eveniet asperiores est ex, fugit maxime, perspiciatis temporibus consectetur reprehenderit? Amet consequuntur exercitationem minima inventore ratione cupiditate deserunt recusandae aperiam itaque tenetur.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.ez.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
